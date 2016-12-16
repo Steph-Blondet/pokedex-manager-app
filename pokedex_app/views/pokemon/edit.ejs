@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700" rel="stylesheet">
+    <title>Edit Pokemon</title>
+  </head>
+  <body class="body-show-edit-new">
+
+    <h1 class="form-header">Edit Pokemon</h1>
+
+    <div class="form-container">
+      <form action="/pokemon/<%=pokeIndex%>?_method=PUT" method="POST">
+
+        <input type="text" name="name" placeholder="New Name"/>
+        <input type="number" name="id" placeholder="New Id"/>
+        <input type="url" name="img" placeholder="New Image Url"/>
+        <input type="text" name="type" placeholder="New Type"/>
+        <input type="number" name="stats" placeholder="New Stats"/>
+
+        <button class="submit-button" type="submit" value="Submit Changes"/>Submit New Pokemon</button>
+
+      </form>
+    </div>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>

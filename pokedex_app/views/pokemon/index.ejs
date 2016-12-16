@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700" rel="stylesheet">
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+    <title>Pokedex</title>
+  </head>
+  <body id="body-index">
+
+    <h1></h1>
+
+    <div id="container-index">
+
+      <button id="add-button"><a href="pokemon/new">+</a></button>
+
+      <% for (var i=0; i<pokeAll.length; i++) { %>
+
+        <div class="square">
+          <a href="/pokemon/<%=i%>"><img src='<%= pokeAll[i].img %>'/></a>
+          <p class="poke-id"><a href="/pokemon/<%= i %>"><%= pokeAll[i].id %></a></p>
+          <p class="poke-name"><a href="/pokemon/<%= i %>"><%= pokeAll[i].name %></a></p>
+
+          <button class="edit-button"><a href="/pokemon/<%=i%>/edit">Edit Pokemon</a></button>
+
+          <form action="/pokemon/<%=i%>?_method=DELETE" method="POST">
+            <input type="submit" value="Delete This Pokemon"/>
+          </form>
+        </div>
+
+      <% } %>
+
+    </div>
+
+
+
+
+  </body>
+</html>

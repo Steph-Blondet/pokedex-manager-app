@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700" rel="stylesheet">
+    <title>Pokemon</title>
+  </head>
+  <body class="body-show-edit-new">
+
+    <h1 id="header-pages"><a href="/pokemon">Back to Pokedex</a></h1>
+
+    <div class="show-container">
+      <div class="show-content">
+        <div class="id-name">
+          <h2><%= onePoke.id %></h2>
+          <h2><%= onePoke.name %></h2>
+        </div>
+
+        <div class="show-img"><img src='<%= onePoke.img %>'/>
+
+          <div class="show-info">
+            <div class="type-info">
+              <h2>Type</h2>
+              <% for (var i=0; i<onePoke.type.length; i++) { %>
+                <p><%= onePoke.type[i] %></p>
+              <% } %>
+            </div>
+
+            <div class="stats-info">
+              <h2>Stats</h2>
+              <p>hp: <%= onePoke.stats.hp %></p>
+              <p>attack: <%= onePoke.stats.attack %></p>
+              <p>defense: <%= onePoke.stats.defense %></p>
+              <p>spattack: <%= onePoke.stats.spattack %></p>
+              <p>spdefense: <%= onePoke.stats.spdefense %></p>
+              <p>speed: <%= onePoke.stats.speed %></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

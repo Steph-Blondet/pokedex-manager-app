@@ -1,0 +1,282 @@
+/*--- INDEX COVER PAGE ---*/
+body {
+  background-color: lightcyan;
+}
+
+.add-gotta-img {
+  width: 30%;
+  margin: 0 auto;
+  content: url(images/pokemon-gotta-catchem-all.png);
+}
+
+.add-pokedex-img {
+  width: 45%;
+  margin: 1% auto;
+  content: url(images/pokedex-start-here.png);
+  position: relative;
+}
+
+/*--- INDEX PAGE ---*/
+#body-index {
+  background-image: url(images/pokeball-red-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%; /*cover*/
+  margin: 0;
+}
+
+.header-index{
+  content: url(images/pokedex-logo.png);
+  width: 20%;
+  margin: 0 auto;
+  padding: 1.5%;
+}
+
+#container-index {
+  width: 80%;
+  margin: auto;
+  background-color: #F1EBE6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#add-button {
+  margin: 1% 0 1% 2%;
+  width: 50px;
+	height: 50px;
+  font-family: 'Fira Mono', monospace;
+  font-weight: 700;
+  font-size: 2em;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px #888888;
+  background-color: #0000EE;
+  display: block;
+}
+
+#add-button a, .edit-button a, input[type=submit] {
+  text-decoration: none;
+  color: white;
+}
+
+#add-button:hover {
+  background-color: #30A7D7;
+}
+
+.square {
+  display: inline-block;
+  margin: 1% 1% 1% 2%;
+  padding: 2%;
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 10%;
+  font-family: 'Fira Mono', monospace;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.square:hover {
+  transition: transform .3s;
+  transform:  scale(1.15);
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.square p.poke-id a, .square p.poke-name a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+p.poke-id {
+  margin: 10% 0 0 0;
+  padding: 0;
+  /*font-size: .8em;*/
+}
+
+p.poke-name {
+  margin: 0;
+}
+
+.edit-button, input[type=submit] {
+  font-family: 'Fira Mono', monospace;
+  font-size: 0.6em;
+  width: 15em;
+  background-color: #30A7D7;
+  margin: 0;
+  border: none;
+}
+
+.edit-button:hover, input[type=submit]:hover {
+  background-color: #e33a26;
+}
+
+
+
+/*--- SHOW PAGE ---*/
+body {
+  margin: 0;
+}
+
+.body-show-edit-new {
+  background-image: url(images/pokemon-page-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header-pages {
+  font-family: 'Fira Mono', monospace;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  width: 80%;
+  margin: 2% auto 1%;
+  padding: 1%;
+  background-color: #E3350D;
+  border-radius: 10px;
+}
+
+#header-pages a {
+  text-decoration: none;
+  color: white;
+}
+
+#header-pages a:hover {
+  color: #CCCCCC;
+}
+
+.show-container {
+  background-image: url(images/pokemon-page-background-2.jpg);
+  background-size: cover;
+  background-color: #F1EBE6;
+  border-radius: 10px;
+  width: 78%;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.show-content {
+  width: 96%;
+  margin: 0 auto;
+  padding: 2%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.id-name {
+  display: block;
+  text-align: center;
+  font-size: 1.3em;
+  color: #313131;
+  margin: 0 0 2% 0;
+}
+
+.id-name h2 {
+  font-family: 'Fira Mono', monospace;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 1% 0;
+  padding: 1% 0;
+}
+
+.show-img img {
+  width: 400px;
+  height: 400px;
+  margin: 2% 8% 2% 10%;
+}
+
+.show-info {
+  font-family: 'Fira Mono', monospace;
+  display: inline-block;
+  margin: 0 auto 2%;
+  vertical-align: top;
+}
+
+.show-info h2 {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  /*position: relative;*/
+}
+
+.type-info {
+  background-color: #FD7D24;
+  color: white;
+  width: 280%;
+  margin: 0 auto;
+  padding: 20%;
+  border-radius: 10px;
+}
+
+.type-info h2, .type-info p {
+  margin: 0;
+}
+
+.stats-info {
+  background-color: #30A7D7;
+  color: white;
+  width: 280%;
+  margin: 6% 0;
+  padding: 20%;
+  border-radius: 10px;
+}
+
+.stats-info h2, .stats-info p {
+  margin: 0;
+}
+
+
+
+/*--- EDIT & NEW PAGE ---*/
+.form-header {
+  font-family: 'Fira Mono', monospace;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  width: 40%;
+  margin: 5% auto 0;
+  padding: 1%;
+  background-color: #E3350D;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.form-container {
+  background-image: url(images/pokemon-page-background-2.jpg);
+  background-size: cover;
+  background-color: #F1EBE6;
+  border-radius: 0;
+  width: 38%;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+input[type=text], input[type=number], input[type=url] {
+  width: 90%;
+  border: none;
+  padding: 3%;
+  margin: 2%;
+  box-shadow: 2px 2px 5px gray;
+}
+
+.submit-button {
+  font-family: 'Fira Mono', monospace;
+  font-weight: 700;
+  font-size: 1em;
+  margin: 3% auto;
+  padding: 15px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-radius: 200px;
+  box-shadow: 3px 3px 5px #888888;
+  background-color: #0000EE;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #4DAD5B;
+}
