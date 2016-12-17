@@ -1,5 +1,5 @@
 # Pokedex Manager App
-This app has the ability to create, edit, show and
+This app has the ability to create, edit, show and delete Pokemons.
 
 ## Basic Requirements
 1. Display an index page with the images of all the Pokémon
@@ -22,6 +22,12 @@ This app has the ability to create, edit, show and
 ![Pokedex New Page](images/pokedex-new-page.png "Pokedex New Page")
 
 ![Pokedex Show Page](images/pokedex-show-page.png "Pokedex Show Page")
+
+
+## Future Features
+- Add jQuery
+- Add 'Add New Pokemon' text to the + icon when the button is hovered
+- Fix route to go to the show page of a Pokemon when edited
 
 ----------------------
 
