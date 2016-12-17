@@ -15,13 +15,13 @@ This app has the ability to create, edit, show and delete Pokemons.
 - CSS
 - JavaScript
 
-![Pokedex Cover Page](images/pokedex-cover-page.png "Pokedex Cover Page")
+![Pokedex Cover Page](pokedex_app/images/pokedex-cover-page.png "Pokedex Cover Page")
 
-![Pokedex Index Page](images/pokedex-index-page.png "Pokedex Index Page")
+![Pokedex Index Page](pokedex_app/images/pokedex-index-page.png "Pokedex Index Page")
 
-![Pokedex New Page](images/pokedex-new-page.png "Pokedex New Page")
+![Pokedex New Page](pokedex_app/images/pokedex-new-page.png "Pokedex New Page")
 
-![Pokedex Show Page](images/pokedex-show-page.png "Pokedex Show Page")
+![Pokedex Show Page](pokedex_app/images/pokedex-show-page.png "Pokedex Show Page")
 
 
 ## Future Features
